@@ -1,26 +1,23 @@
-server:
-  port: 9528
 spring:
   application:
-    name: Imooc-Passbook
+    name: Merchants
   datasource:
-    url: jdbc:mysql://localhost:3306/passbook?characterEncoding=utf8&useSSL=true
+    url: jdbc:mysql://127.0.0.1:3306/passbook?useSSL=false&autoReconnect=true
     username: root
-    password: root
+    password: 123456
   kafka:
     bootstrap-servers: 127.0.0.1:9092
     consumer:
       group-id: passbook
     listener:
       concurrency: 4
-  data:
-    hbase:
-      quorum: 127.0.0.1:2181
-      rootDir:
-      nodeParent: /hbase
-  redis:
-    host: 127.0.0.1
-    port: 6379
+  jpa:
+    show-sql: true
+
+server:
+  port: 9527
+
 logging:
-  file: imooc-passbook.log
   level: debug
+  file:
+    name: merchants.log

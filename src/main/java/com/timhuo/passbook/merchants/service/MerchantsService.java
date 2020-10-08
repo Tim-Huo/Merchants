@@ -30,7 +30,7 @@ public interface MerchantsService {
     ResponseVO buildMerchantsInfoById(Integer id);
 
     /**
-     * 投放优惠券
+     * 商户投放优惠券
      *
      * @param passTempateVO {@link PassTempateVO} 优惠券对象
      * @return {@link ResponseVO}

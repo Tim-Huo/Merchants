@@ -47,9 +47,9 @@ public class MerchantsServiceImplTest {
     public void dropPassTemplate() {
         PassTempateVO passTempateVO = new PassTempateVO();
         passTempateVO.setId(2);
-        passTempateVO.setTitle("慕课网");
-        passTempateVO.setSummary("简介：慕课网");
-        passTempateVO.setDesc("详情：慕课网"); 
+        passTempateVO.setTitle("tim");
+        passTempateVO.setSummary("简介：tim");
+        passTempateVO.setDesc("详情：tim");
         passTempateVO.setLimit(10000L);
         passTempateVO.setHasToKen(false);
         passTempateVO.setBackground(2);

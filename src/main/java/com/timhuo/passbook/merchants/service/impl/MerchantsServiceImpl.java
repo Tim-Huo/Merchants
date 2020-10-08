@@ -87,7 +87,7 @@ public class MerchantsServiceImpl implements MerchantsService {
     }
 
     /**
-     * 投放优惠券
+     * 商户投放优惠券
      *
      * @auther: Tim_Huo
      * @param: passTempateVO
