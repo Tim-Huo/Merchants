@@ -1,0 +1,4 @@
+hbase：优惠券数据，用户使用的优惠券等等
+mysql：存储商户信息
+kafka：商户子系统与用户子系统连接。 商户向kafka的topic中投放优惠券，用户端去监听，监听到取出kafka的消息并序列化，在写入到hbase中
+redis：将优惠券的token存储到redis中
